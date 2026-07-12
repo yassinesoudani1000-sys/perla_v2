@@ -1,4 +1,3 @@
-import Script from "next/script";
 import fs from "fs";
 import path from "path";
 
@@ -25,7 +24,7 @@ export default function HomePage() {
         suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: cleanedHtml }}
       />
-      <Script src="/scripts.js" strategy="afterInteractive" />
+      <script src="/scripts.js" />
     </>
   );
 }

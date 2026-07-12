@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import Script from "next/script";
 
 const criticalCss = `
 *,:root{--cream:#F6F1E4;--cream-deep:#EDE4CF;--ivory:#FBF8F0;--ink:#16140F;--ink-soft:#46412F;--gold:#B8912F;--gold-bright:#D4AF52;--gold-deep:#8C6A1E;--gold-pale:#F2E2A8;--olive:#5C6B33;--olive-deep:#3a4220;--royal:#0E3B2E;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif;--display:'Cinzel',Georgia,serif;--script:'Great Vibes',cursive}
@@ -24,7 +25,7 @@ export default function HomePage() {
         suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: cleanedHtml }}
       />
-      <script src="/scripts.js" />
+      <Script src="/scripts.js" strategy="beforeInteractive" />
     </>
   );
 }

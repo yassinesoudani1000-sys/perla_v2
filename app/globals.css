@@ -863,8 +863,8 @@ footer{
       #050b07 100%) !important;
 }
 @media(max-width:680px){
-  #gate{background:linear-gradient(180deg,#FBF8F0 0%,#F2EAD6 40%,#13241c 40%,#070d09 100%)!important;}
-  #gate::after{height:60%!important;}
+  #gate{background:linear-gradient(180deg,#FBF8F0 0%,#F2EAD6 26%,#13241c 26%,#070d09 100%)!important;}
+  #gate::after{height:74%!important;}
   footer{background:linear-gradient(180deg,var(--cream) 0,var(--cream) 220px,#0c1f18 220px,#050b07 100%)!important;}
 }
 

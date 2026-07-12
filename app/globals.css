@@ -8994,3 +8994,143 @@ footer{
   .reviews-track-v131{animation:none}
 }
 
+/* ===== MOBILE RESPONSIVE OVERHAUL ===== */
+@media(max-width:680px){
+  .wrap{padding:0 20px}
+  h2{font-size:clamp(1.6rem,6vw,2.2rem)!important}
+  h3{font-size:clamp(1.2rem,4.5vw,1.5rem)!important}
+  p,li{font-size:.92rem;line-height:1.65}
+  .btn{padding:14px 26px;font-size:.7rem}
+  .sec-head{margin-bottom:32px!important}
+  .sec-head h2{font-size:1.7rem!important}
+  .sec-head p{font-size:.88rem!important}
+
+  /* Gate screen */
+  #gate{padding:20px 16px}
+  .gate-brand-img{height:min(32vh,260px)}
+  .gate-awards-line{font-size:.58rem!important;gap:6px!important;margin-top:1rem!important}
+  .gate-awards-highlight{font-size:.78em!important}
+  .gate-paths{gap:14px!important;margin-top:1rem!important}
+  .path-card{width:min(100%,300px)!important;padding:24px 18px!important}
+  .path-card h3{font-size:1.4rem!important}
+  .path-card p{font-size:.76rem!important;min-height:auto!important}
+
+  /* Header */
+  header{padding:12px 16px}
+  header.scrolled{padding:8px 16px}
+  .header-logo-svg{height:44px}
+  header.scrolled .header-logo-svg{height:36px}
+  .burger-label{display:none}
+  .burger-bars span{width:22px}
+  .acct-btn{font-size:.6rem}
+  .lang-btn{font-size:.6rem}
+
+  /* Hero */
+  .hero-scene-content{padding:100px 20px 50px!important}
+  .hero-crest-img{height:clamp(100px,28vw,160px)}
+  .hero-reserve-title{font-size:clamp(.85rem,3.5vw,1.1rem)!important}
+  .hero-bottle-img{height:min(40vh,320px)!important}
+  .hero-scene-actions{gap:12px;justify-content:center}
+  .hero-scene-actions .btn{font-size:.66rem;padding:12px 20px}
+  .hero-award-text{font-size:.58rem;padding:8px 16px}
+  .hero-content-right{display:none}
+  .hero-trust-dark{flex-wrap:wrap;gap:14px;padding:20px}
+
+  /* Slide menu */
+  .slide-menu{width:100%}
+  .slide-menu-head{padding:20px}
+  .slide-menu-crest{height:64px}
+  .slide-menu-nav{padding:16px 20px}
+  .slide-menu-foot{padding:16px 20px}
+  .menu-pro-intro span{font-size:.7rem}
+  .menu-pro-intro b{font-size:.58rem}
+  .menu-pro-head{font-size:.82rem;padding:14px 0}
+  .menu-pro-sub{font-size:.82rem;padding:10px 0}
+
+  /* Grid adjustments */
+  .gallery-grid{gap:10px}
+  .awards-grid,.medal-grid{grid-template-columns:1fr!important}
+  .discover-grid{grid-template-columns:1fr!important}
+  .offer-grid{grid-template-columns:1fr!important}
+  .commission-grid,.euro-points{grid-template-columns:1fr!important}
+  .footer-grid{grid-template-columns:1fr;gap:24px;text-align:center}
+
+  /* Sections spacing */
+  section{padding:50px 0!important}
+  .hero-scene{min-height:92vh!important}
+  .hero-five-stars{font-size:.6rem!important}
+
+  /* Tables / data */
+  .award-row{grid-template-columns:1fr 1fr auto!important;gap:6px;padding:10px 0}
+  .berlin-model-grid{grid-template-columns:1fr!important}
+
+  /* Product grid */
+  .product-grid{grid-template-columns:repeat(2,1fr)!important;gap:14px}
+  .pv-card{padding:16px}
+  .pv-card h4{font-size:.85rem}
+  .pv-card .pv-price{font-size:.92rem}
+
+  /* Checkout modal */
+  .modal-overlay{padding:0!important}
+  .modal-shell{border-radius:18px!important;margin:0!important;max-height:100vh!important}
+  .checkout-head-v108{padding:22px 48px 18px 20px!important}
+  .checkout-body-v108{padding:20px!important}
+
+  /* Lightbox */
+  .lightbox{padding:8px!important}
+  .lb-shell{border-radius:16px!important}
+  .lb-close{top:10px!important;right:10px!important;width:34px!important;height:34px!important;font-size:1.1rem!important}
+
+  /* Reviews */
+  .rev-card-v131{width:280px;padding:22px 20px 18px}
+  .reviews-track-v131{animation-duration:50s}
+}
+
+@media(max-width:480px){
+  .wrap{padding:0 14px}
+  .gate-brand-img{height:min(26vh,200px)}
+  .gate-awards-line{font-size:.5rem!important;gap:4px!important}
+  .path-card{padding:20px 14px!important}
+  .path-card h3{font-size:1.2rem!important}
+  .path-card p{font-size:.7rem!important}
+
+  /* Hero */
+  .hero-scene-content{padding:80px 14px 40px!important}
+  .hero-crest-img{height:clamp(80px,24vw,120px)}
+  .hero-reserve-title{font-size:clamp(.75rem,3vw,.95rem)!important}
+  .hero-reserve-sub{font-size:.58rem}
+  .hero-scene-actions{gap:8px;flex-direction:column;align-items:center}
+  .hero-scene-actions .btn{width:100%;justify-content:center}
+
+  /* Product grid single column on very small */
+  .product-grid{grid-template-columns:1fr!important}
+
+  /* Modal adjustments */
+  .modal-shell{border-radius:14px!important}
+  .checkout-head-v108{padding:18px 44px 16px 16px!important}
+  .checkout-body-v108{padding:16px!important}
+  .checkout-step-indicator-v108{gap:4px}
+  .checkout-step-indicator-v108 span{font-size:.58rem;padding:6px 10px}
+
+  /* Typography */
+  h2{font-size:clamp(1.3rem,5.5vw,1.7rem)!important}
+  .sec-head h2{font-size:1.4rem!important}
+  .btn{padding:12px 20px;font-size:.65rem}
+
+  /* Header ultra compact */
+  header{padding:10px 12px}
+  .header-logo-svg{height:34px}
+  header.scrolled .header-logo-svg{height:30px}
+  .acct-btn{font-size:.55rem;letter-spacing:.1em}
+
+  footer{padding:36px 14px 24px!important}
+}
+
+/* Fix for very small screens - ensure text doesn't overflow */
+@media(max-width:380px){
+  .gate-awards-line{flex-direction:column;align-items:center}
+  .gate-awards-sep{display:none}
+  .hero-five-stars::before,.hero-five-stars::after{width:16px!important}
+  .hero-five-stars{font-size:.5rem!important;letter-spacing:.12em!important}
+}
+

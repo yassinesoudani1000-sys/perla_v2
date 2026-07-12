@@ -8998,8 +8998,8 @@ footer{
 /* ===== MOBILE RESPONSIVE OVERHAUL ===== */
 @media(max-width:680px){
   .wrap{padding:0 20px}
-  h2{font-size:clamp(1.6rem,6vw,2.2rem)!important}
-  h3{font-size:clamp(1.2rem,4.5vw,1.5rem)!important}
+  h2{font-size:clamp(1.8rem,7vw,2.4rem)!important}
+  h3{font-size:clamp(1.3rem,5vw,1.7rem)!important}
   p,li{font-size:.92rem;line-height:1.65}
   .btn{padding:14px 26px;font-size:.7rem}
   .sec-head{margin-bottom:32px!important}
@@ -9008,19 +9008,19 @@ footer{
 
   /* Gate screen */
   #gate{padding:20px 16px}
-  .gate-brand-img{height:min(26vh,180px)!important;margin-top:24px}
-  .gate-awards-line{font-size:.58rem!important;gap:6px!important;margin-top:1rem!important}
-  .gate-awards-highlight{font-size:.78em!important}
+  .gate-brand-img{height:min(35vh,260px)!important;margin-top:32px}
+  .gate-awards-line{font-size:.85rem!important;gap:10px!important;margin-top:1.5rem!important}
+  .gate-awards-highlight{font-size:.9em!important}
   .gate-paths{gap:14px!important;margin-top:1rem!important}
-  .path-card{width:min(100%,300px)!important;padding:24px 18px!important}
-  .path-card h3{font-size:1.4rem!important}
-  .path-card p{font-size:.76rem!important;min-height:auto!important}
+  .path-card{width:min(100%,320px)!important;padding:24px 18px!important}
+  .path-card h3{font-size:2rem!important}
+  .path-card p{font-size:.95rem!important;line-height:1.4!important;min-height:auto!important}
 
   /* Header */
   header{padding:12px 16px}
   header.scrolled{padding:8px 16px}
-  .header-logo-svg{height:44px}
-  header.scrolled .header-logo-svg{height:36px}
+  .header-logo-svg{height:48px}
+  header.scrolled .header-logo-svg{height:40px}
   .burger-label{display:none}
   .burger-bars span{width:22px}
   .acct-btn{font-size:.6rem}
@@ -9028,13 +9028,13 @@ footer{
 
   /* Hero */
   .hero-scene-content{padding:100px 20px 50px!important}
-  .hero-crest-img{height:clamp(100px,28vw,160px)}
-  .hero-reserve-title{font-size:clamp(.85rem,3.5vw,1.1rem)!important}
-  .hero-bottle-img{height:min(40vh,320px)!important}
+  .hero-crest-img{height:clamp(140px,32vw,200px)}
+  .hero-reserve-title{font-size:clamp(.95rem,4vw,1.2rem)!important}
   .hero-scene-actions{gap:12px;justify-content:center}
   .hero-scene-actions .btn{font-size:.66rem;padding:12px 20px}
   .hero-award-text{font-size:.58rem;padding:8px 16px}
-  .hero-content-right{display:none}
+  .hero-content-right{display:flex!important;justify-content:center!important;align-items:center!important;margin-top:30px!important;width:100%!important}
+  .hero-bottle-img{height:min(50vh,380px)!important;width:auto!important;display:block!important;margin:0 auto!important}
   .hero-trust-dark{flex-wrap:wrap;gap:14px;padding:20px}
 
   /* Slide menu */
@@ -9065,11 +9065,32 @@ footer{
   .award-row{grid-template-columns:1fr 1fr auto!important;gap:6px;padding:10px 0}
   .berlin-model-grid{grid-template-columns:1fr!important}
 
-  /* Product grid */
-  .product-grid{grid-template-columns:repeat(2,1fr)!important;gap:14px}
-  .pv-card{padding:16px}
-  .pv-card h4{font-size:.85rem}
-  .pv-card .pv-price{font-size:.92rem}
+  /* Product grid (shop) – single column, centered, large bottles */
+  .product-grid{grid-template-columns:1fr!important;gap:28px!important;padding:0 16px!important}
+  .product-card{max-width:400px!important;margin:0 auto!important;width:100%!important}
+  .pc-media img{height:85%!important}
+
+  /* Premium product cards (home) – stacked vertical, bottle on top */
+  .pv-products{grid-template-columns:1fr!important;max-width:480px!important;margin:30px auto!important;gap:32px!important}
+  .pv-card,.pv-card.pv-middle{display:flex!important;flex-direction:column-reverse!important;min-height:auto!important;max-width:100%!important;padding:24px!important}
+  .pv-product-visual{min-height:380px!important;width:100%!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:20px 0!important}
+  .pv-botanical{display:none!important}
+  .pv-card[data-size="250"] .pv-bottle,
+  .pv-card.pv-middle .pv-bottle,
+  .pv-card[data-size="750"] .pv-bottle{
+    height:340px!important;width:auto!important;max-width:90%!important;margin:0 auto!important;transform:none!important;display:block!important
+  }
+  .pv-copy,.pv-middle .pv-copy{width:100%!important;padding:20px 0 0!important;text-align:center!important}
+  .pv-eyebrow{font-size:.9rem!important;justify-content:center!important}
+  .pv-size{font-size:1.8rem!important;justify-content:center!important}
+  .pv-promise{font-size:1.1rem!important;text-align:center!important;margin:10px auto!important}
+  .pv-facts{display:flex!important;flex-direction:column!important;align-items:flex-start!important;max-width:280px!important;margin:20px auto!important;gap:12px!important;text-align:left!important}
+  .pv-fact{display:flex!important;align-items:center!important;gap:10px!important;font-size:.9rem!important;width:100%!important}
+  .pv-bottom{display:flex!important;flex-direction:column!important;align-items:center!important;gap:10px!important;border-top:1px solid rgba(212,175,82,.15)!important;padding-top:18px!important;margin-top:16px!important}
+  .pv-price{font-size:2rem!important;text-align:center!important}
+  .pv-unit{font-size:.85rem!important;text-align:center!important}
+  .pv-actions{display:flex!important;flex-direction:column!important;gap:12px!important;width:100%!important;margin-top:10px!important}
+  .pv-actions button{width:100%!important;padding:14px 20px!important;font-size:.85rem!important;text-transform:uppercase!important;letter-spacing:.1em!important;border-radius:8px!important;cursor:pointer!important}
 
   /* Checkout modal */
   .modal-overlay{padding:0!important}
@@ -9089,19 +9110,20 @@ footer{
 
 @media(max-width:480px){
   .wrap{padding:0 14px}
-  .gate-brand-img{height:min(22vh,140px)!important;margin-top:16px}
-  .gate-awards-line{font-size:.5rem!important;gap:4px!important}
+  .gate-brand-img{height:min(32vh,220px)!important;margin-top:24px}
+  .gate-awards-line{font-size:.75rem!important;gap:8px!important}
   .path-card{padding:20px 14px!important}
-  .path-card h3{font-size:1.2rem!important}
-  .path-card p{font-size:.7rem!important}
+  .path-card h3{font-size:1.8rem!important}
+  .path-card p{font-size:.85rem!important;line-height:1.4!important}
 
   /* Hero */
   .hero-scene-content{padding:80px 14px 40px!important}
-  .hero-crest-img{height:clamp(80px,24vw,120px)}
-  .hero-reserve-title{font-size:clamp(.75rem,3vw,.95rem)!important}
+  .hero-crest-img{height:clamp(100px,28vw,140px)}
+  .hero-reserve-title{font-size:clamp(.85rem,3.5vw,1rem)!important}
   .hero-reserve-sub{font-size:.58rem}
   .hero-scene-actions{gap:8px;flex-direction:column;align-items:center}
   .hero-scene-actions .btn{width:100%;justify-content:center}
+  .hero-bottle-img{height:min(42vh,300px)!important}
 
   /* Product grid single column on very small */
   .product-grid{grid-template-columns:1fr!important}
@@ -9120,8 +9142,8 @@ footer{
 
   /* Header ultra compact */
   header{padding:10px 12px}
-  .header-logo-svg{height:34px}
-  header.scrolled .header-logo-svg{height:30px}
+  .header-logo-svg{height:38px}
+  header.scrolled .header-logo-svg{height:34px}
   .acct-btn{font-size:.55rem;letter-spacing:.1em}
 
   footer{padding:36px 14px 24px!important}

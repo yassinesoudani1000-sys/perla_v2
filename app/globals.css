@@ -145,6 +145,7 @@ header.on-dark:not(.scrolled) .burger-bars span{background:var(--cream)}
   .hero-scene-actions{justify-content:center;width:100%;gap:10px}
   .hero-scene-actions .btn{flex:1;min-width:0;padding:13px 10px;font-size:.62rem;justify-content:center}
   .hero-bottle-img{height:46vh}
+  .hero-bg-img{object-fit:contain!important}
 }
 
 /* ============ HERO ============ */

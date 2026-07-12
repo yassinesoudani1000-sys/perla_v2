@@ -25,7 +25,7 @@ export default function HomePage() {
         suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: cleanedHtml }}
       />
-      <Script src="/scripts.js" strategy="beforeInteractive" />
+      <Script src="/scripts.js" strategy="afterInteractive" />
     </>
   );
 }

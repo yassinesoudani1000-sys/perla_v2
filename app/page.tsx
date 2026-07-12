@@ -10,7 +10,7 @@ img{max-width:100%;display:block;height:auto}
 `;
 
 export default function HomePage() {
-  const bodyPath = path.join(process.cwd(), "public", "body.min.html");
+  const bodyPath = path.join(process.cwd(), "public", "body.html");
   const bodyHtml = fs.readFileSync(bodyPath, "utf-8");
 
   const cleanedHtml = bodyHtml.replace(
